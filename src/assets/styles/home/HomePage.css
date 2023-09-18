@@ -1,0 +1,126 @@
+.hero-cont{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    border-bottom: solid 1px rgb(36, 36, 36);
+    margin: 160px 112px 50px 112px;
+    padding-bottom: 90px;
+}
+.hero1{
+    grid-column: span 3 / span 3;
+}
+.hero-title{
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1;
+    color: rgb(41, 37, 36);
+    font-family: "Poppins", "sans-serif";
+}
+.hero-para{
+    font-weight: 300;
+    color: rgb(68, 64, 60);
+    padding: 20px 96px 20px 0;
+}
+.hero-para-underline{
+    color: rgb(41, 37, 36);
+    text-decoration: underline;
+    font-weight: 600;
+}
+.hero-btn{
+    border: solid 1px rgb(36, 36, 36);
+    background-color: rgb(41, 37, 36);
+    padding: 10px 16px;
+    color: antiquewhite;
+    font-weight: 700;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.hero-btn:hover{
+    background-color: transparent;
+    color: rgb(41, 37, 36);
+}
+.hero2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 16px;
+    grid-column: span 4 / span 4 ;
+    height: 100%;
+}
+.hero2-img1-cont{
+    display: flex;
+    align-items:flex-start;
+    height: 100%;
+}
+.hero2-img1{
+    width: 50%;
+    opacity: 0.85;
+}
+.hero2-img2-cont{
+    display: flex;
+    align-items:center;
+    height: 100%;
+}
+.hero2-img2{
+    width: 50%;
+    opacity: 0.8;
+}
+.hero2-img3-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+.hero2-h1-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 112px;
+}
+.hero2-h1{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 900;
+    color: rgb(41, 37, 36);
+}
+.hero2-p{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(68, 64, 60);
+}
+.hero2-img3{
+    width: 50%;
+    opacity: 0.8;
+}
+.line-cont{
+    padding: 0 100px;
+}
+.line{
+    text-align: center;
+    height: 1px;
+    background-color: gray;
+}
+
+@media only screen and (max-width:800px) {
+    .hero-cont{
+        grid-template-columns: 1fr;
+        margin: 150px 20px 50px 20px;
+    }
+    .hero2{
+        display: none;
+    }
+
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+    .hero-cont{
+        grid-template-columns: 1fr;
+        margin: 150px 100px 50px 100px;
+    }
+    .hero2{
+        display: none;
+    }
+
+}

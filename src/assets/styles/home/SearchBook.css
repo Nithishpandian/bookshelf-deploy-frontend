@@ -1,0 +1,325 @@
+.search-page{
+    padding: 0 0;
+    margin: 96px 112px;
+    min-height: 54vh;
+}
+.search-cont-cont{
+    display: flex;
+    justify-content: center;
+}
+.search-input-cont{
+    position:relative;
+    width: fit-content;
+    z-index: 0 !important; 
+    margin-top: 0px;
+}
+.search-input{
+    border: solid 1px rgb(163, 163, 163);
+    padding: 10px 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 350px;
+    background-color: rgb(252, 252, 252);
+}
+.search-input:focus{
+    outline: none;
+}
+.search-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.search-icon ion-icon{
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+}
+.search-card-page{
+    padding: 25px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Book card */
+.bookcard-cont{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 1px rgb(190, 190, 190);
+}
+.bookcard-cont:hover{
+    border: solid 1px rgb(136, 184, 255);
+}
+.searchbook-img-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbook-img{
+    width: 180px;
+    height: 204px;
+    /* object-fit: cover; */
+}
+.bookcard-info-cont{
+    padding: 22px 20px;
+}
+.bookcard-title{
+    color: rgb(39, 39, 39);
+    font-size: 25px;
+    margin-bottom: 2px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 12px;
+    align-items: center;
+}
+.bookcard-author-cont{
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+}
+.bookcard-author{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.bookcard-description{
+    font-size: 15px;
+    color: rgb(70, 70, 70);
+    margin-top: 10px;
+}
+.currently-reading-btn{
+    background-color: #fafafa;
+    padding: 3px 8px;
+    border: solid 0.5px rgb(24, 24, 24);
+    border-radius: 3px;
+    font-weight: 600;
+    color: rgb(27, 27, 27);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.currently-reading-btn:hover{
+    background-color: rgb(19, 19, 19);
+    color: whitesmoke;
+}
+.rating-cont{
+    margin: 4px 0 6px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.rating-count{
+    font-size: 13px;
+    color: rgb(82, 82, 82);
+}
+.review-cont{
+    margin-bottom: 3px;
+}
+.reviewtxt-cont{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+}
+.reviewtxt-cont ion-icon{
+    font-size: 14px;
+    color: rgb(92, 92, 92);
+    cursor: pointer;
+}
+.reviewtxt-cont ion-icon:hover{
+    color: rgb(136, 136, 136);
+}
+.review{
+    color: rgb(94, 94, 94);
+    font-size: 13px;
+}
+.review::before{
+    content: "~ ";
+}
+.review-input{
+    padding: 5px 3px;
+    font-size: 15px;
+    width: 180px; 
+    margin-right: 10px;
+}
+.review-input:focus{
+    outline: none;
+}
+.bookcard-btn{
+    background-color: rgb(48, 48, 48);
+    font-weight: 600;
+    color: whitesmoke;
+    border:solid 1px rgb(46, 46, 46);
+    border-radius: 4px;
+    padding: 7px 9px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.bookcard-btn:hover{
+    opacity: 0.85;
+}
+
+/* Currently reading page */
+.comment-cont-cont{
+    margin: 10px 0;
+    color: rgb(58, 58, 58);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.comment-cont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.percentage-text{
+    font-weight: 600;
+}
+.comment{
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+.comment::before{
+    content: "- ";
+}
+.percentage-input{
+    width: 40px;
+    padding: 4px 4px;
+    font-size: 14px;
+    border: solid gray 1px;
+    border-radius: 15px;
+}
+.comment-input{
+    padding: 4px 4px;
+    font-size: 14px;
+    border: solid gray 1px;
+    border-radius: 4px;
+}
+.percentage-input:focus, 
+.comment-input:focus{
+    outline: none;
+}
+.percentagebtn-cont-cont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.percentagebtn-cont{
+    display: flex;
+    gap: 6px;
+}
+
+/* Social page */
+
+/* .social-card-page{
+    padding: 25px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+} */
+.like-cont-cont{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.like-cont-cont div ion-icon{
+    font-size: 25px;
+}
+.like-cont{
+    cursor: pointer;
+}
+.comment-input{
+    padding: 4px 8px;
+    border: solid 0.5px gray;
+    border-radius: 14px;
+    width: 200px;
+}
+.comment-input:focus{
+    outline: none;
+}
+.comment-btn{
+    margin-left: 6px;
+    padding: 4px 8px;
+    border: solid 1px rgb(37, 37, 37);
+    border-radius: 4px;
+    background-color: rgb(34, 34, 34);
+    color: whitesmoke;
+    font-size: 14px;
+    font-weight: 600;
+}
+.post-delete-icon{
+    transition: color 0.2s;
+    cursor: pointer;
+}
+.post-delete-icon:hover{
+    color: rgb(92, 92, 92);
+}
+.post-delete-icon ion-icon{
+    font-size: 22px;
+}
+
+
+/* footer */
+.footer-place-cont{
+    display: flex;
+    align-items:self-end;
+}
+
+@media (min-width: 860px) and (max-width: 1450px) {
+    .search-card-page{
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 670px) and (max-width: 860px) {
+    .search-page{
+        padding: 26px 0;
+        margin: 0 10px;
+    }
+    .search-input-cont{
+        margin-top: 80px;
+    }
+    .search-card-page{
+        padding: 60px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .bookcard-cont{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+    .searchbook-img{
+        width: 85vw;
+    }
+    .comment-input{
+        width: 100px;
+    }
+    .search-page{
+        padding: 26px 0 30px 0;
+        margin: 80px 10px;
+    }   
+    .search-card-page{
+        padding: 50px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+
+@media only screen and (max-width:900px) {
+    .search-page{
+        min-height: 65vh;
+    }
+}
